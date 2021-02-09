@@ -3,6 +3,13 @@
 #include <string.h>
 #define size 3
 
+struct Sportteam
+{
+	char name[20];
+	char city[20];
+	int score;
+};
+
 void some_function(struct Sportteam* team)
 {
 	struct Sportteam t[size];
@@ -33,13 +40,6 @@ void some_function(struct Sportteam* team)
 	}
 	printf("The team with the most points: %s", t[num].name);
 }
-
-struct Sportteam
-{
-	char name[20];
-	char city[20];
-	int score;
-};
 
 void main()
 {
